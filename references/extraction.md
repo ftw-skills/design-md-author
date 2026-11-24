@@ -1,0 +1,10 @@
+# Extract a frontend design system
+
+Use Google Labs' [`stitch::extract-design-md`](https://github.com/google-labs-code/stitch-skills/blob/main/plugins/stitch-design/skills/extract-design-md/SKILL.md) when extracting a work's style from available frontend source. Find the installed skill by its declared name. Skills Manager on Windows can store its folder as `stitch__extract-design-md`. Follow the source analysis in phases 1 and 2 and use phase 3 for drafting guidance. Use this skill's destination and format for the final handoff. The upstream Stitch integration applies only to a separate request to import to Stitch.
+
+## Source evidence and handoff
+
+1. Select the target frontend and theme. Read the global styles or theme configuration, then trace actual usage through component variants and representative screens. In a monorepo, check app overrides and shared tokens. If the upstream skill is unavailable, perform this analysis directly.
+2. Capture working values and usage for colors, type, dimensions, spacing, radius, hierarchy, elevation, and applicable states. Check theme and media-query precedence and component exceptions. Use source paths or symbols for important facts. A visible page can confirm a rendered appearance, while a screenshot alone cannot establish exact font families, breakpoints, or states outside the image.
+3. Use the extracted values and rules to write the final file. If an upstream draft is produced, treat it as intermediate evidence. Normalize the token groups, check the prose against the implementation, and include project-relevant variants and conditions. Put the finished file at the requested path and keep Stitch-specific notes only when relevant to the request.
+4. Compare representative tokens and behavioral prose with their source evidence. Distinguish missing evidence from a proposed design decision. When the source belongs to another work and the goal is a new design, document the extracted observations and the target project's adapted choices in the deliverable.
